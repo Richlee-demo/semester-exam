@@ -1,44 +1,52 @@
 /* Components Library Start */
 * {
-  margin: 0rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+* a{
+  font-weight: 600;
+}
+
 /* Font import */
 @media screen {
   @font-face {
     font-family: "Gilroy";
-    src: url("../fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
-    src: url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
-    src: url("../fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
+    src: url("../fonts/gilroy/Gilroy-Regular.ttf") format("truetype"),
+      url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype"),
+      url("../fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
   }
 }
 
-/* Main */
+body {
+  width: 100%;
+  font-family: "Gilroy", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.125rem;
+  overflow-x: hidden;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
-  gap: 6.5rem;
+  gap: 3.5rem;
 }
-body {
-  font-family: "Gilroy", sans-serif;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.125rem;
-}
+
 header {
   margin-top: 1.5rem;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 8.75rem;
+  justify-content: space-evenly;
 }
+
 img {
   width: 9.6875rem;
   height: 2.5rem;
 }
+
 .menu {
   list-style: none;
   padding: 0;
@@ -54,43 +62,47 @@ img {
   text-decoration: none;
   color: #333333;
 }
+
 nav .menu {
   display: flex;
   gap: 2.5rem;
 }
+
 .menu li > #active {
   color: #0065fe;
 }
+
 .cta {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 0;
   gap: 1.5rem;
   height: 2.75rem;
-  width: 13.1875rem;
 }
+
 .cta a {
   color: #0065fe;
 }
+
 .cta .primary {
   padding: 0.75rem 1.5rem;
   border-radius: 6.25rem;
   background-color: #0065fe;
   color: #ffffff;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
+
+.top{
+margin-bottom: -2rem;
+}
+
 .wrapper,
-.hero {
+.one {
   display: flex;
   flex-wrap: wrap;
   width: 64rem;
-  height: fit-content;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 2rem;
 }
+
 #title {
   text-align: center;
   font-size: 3rem;
@@ -98,9 +110,11 @@ nav .menu {
   line-height: 6rem;
   color: #141414;
 }
-#title span {
+
+span {
   color: #0065fe;
 }
+
 .underline {
   position: relative;
   width: 14rem;
@@ -108,156 +122,161 @@ nav .menu {
   left: 26rem;
   top: -1.5rem;
 }
+
 .center {
   font-weight: 400;
   text-align: center;
   line-height: 1.75rem;
   width: 48.8125rem;
 }
+
 .hero {
+  display: flex;
   gap: 2rem;
+  align-items: center;
 }
+
 section > .cta {
   flex-direction: row-reverse;
-  width: fit-content;
-  height: 2.75rem;
   gap: 3.5rem;
-  font-size: 16px;
+  font-size: 1rem;
 }
+
 .cta > .primary {
-  width: 142px;
+  width: 8.875rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #circles {
   position: absolute;
   width: 65.5rem;
 }
-.circle1 {
-  position: absolute;
-  width: 12.5rem;
-  height: 13.4375rem;
-  left: 11.9375rem;
-  top: 0;
-  background: #d60505;
-  border-radius: 100%;
-  filter: blur(43.875rem);
-  opacity: 8%;
-}
-.circle2 {
-  position: absolute;
-  width: 12.5rem;
-  height: 13.4375rem;
-  left: 28.8125rem;
-  top: 0.7438rem;
-  background: #067808;
-  border-radius: 100%;
-  filter: blur(43.875rem);
-  opacity: 8%;
-}
+
+.circle1,
+.circle2,
 .circle3 {
   position: absolute;
+  width: 12.5rem;
+  height: 13.4375rem;
+  border-radius: 100%;
+  filter: blur(43.875rem);
+  opacity: 8%;
+}
+
+.circle1 {
+  background: #d60505;
+  left: 11.9375rem;
+  top: 0;
+}
+
+.circle2 {
+  background: #067808;
+  left: 28.8125rem;
+  top: 0.7438rem;
+}
+
+.circle3 {
+  background: #eac81f;
   width: 116.9375rem;
   height: 37.0625rem;
   left: 48.625rem;
   top: 0.1187rem;
-  background: #eac81f;
-  border-radius: 100%;
   filter: blur(21.875rem);
-  opacity: 8%;
 }
-.container {
-  box-sizing: border-box;
+
+.two{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 40px 60px;
-  gap: 16px;
-  position: absolute;
-  width: 768px;
-  height: 224px;
-  left: calc(50% - 768px / 2 + 98px);
-  top: 631px;
-  background: rgba(254, 254, 254, 0.3);
-  border: 0.5px solid #005ae2;
-  backdrop-filter: blur(106px);
-  border-radius: 24px;
+  align-items: flex-end;
 }
+
+.rightAlign {
+  margin-left: 23.0625rem;
+  margin-right: 20%;
+  width: 52.0625rem;
+  height: 21.0356rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2.5rem 3.75rem;
+  gap: 1rem;
+  height: 14rem;
+  background: rgba(254, 254, 254, 0.3);
+  border: 0.0313rem solid #005ae2;
+  backdrop-filter: blur(6.625rem);
+  border-radius: 1.5rem;
+  z-index: 2;
+}
+
 .blob {
   position: absolute;
-  width: 238.55px;
-  height: 251.2px;
-  left: 369px;
-  top: 625.63px;
+  width: 14.9094rem;
+  height: 15.7rem;
+  z-index: 1;
 }
+
 .icons {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 0px;
-  gap: 20px;
-  width: 384px;
-  height: 80px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  gap: 1.25rem;
 }
+
 .links {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
-  width: 224px;
-  height: 80px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
-.link1 {
-  width: 80px;
-  height: 80px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 1px;
+
+.link1,
+.link2,
+.link3,
+.link4 {
+  width: 5rem;
+  height: 5rem;
 }
 .link2 {
-  width: 80px;
-  height: 80px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px -8px;
+  margin: 0rem -0.5rem;
 }
-.link3 {
-  width: 80px;
-  height: 80px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-}
+
 .arrow {
-  width: 40px;
+  width: 2.5rem;
   height: auto;
 }
-.link4 {
-  width: 80px;
-  height: 80px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-}
+
 .fill {
-  width: 648px;
-  height: 48px;
-  font-size: 16px;
-  line-height: 24px;
+  width: 40.5rem;
+  height: 3rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-align: center;
   color: #141414;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
+}
+
+.base {
+  width: 100vw;
+  height: 5.8125rem;
+  top: 58.1875rem;
+}
+
+.metrics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5rem;
+  height: 13.75rem;
+  background: #f9fbfd;
+}
+
+.features {
+  display: flex;
+  gap: 2rem;
 }

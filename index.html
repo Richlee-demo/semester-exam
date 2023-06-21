@@ -5,37 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SCISSOR</title>
-    <!-- Linking of Stylesheet -->
     <link rel="stylesheet" href="./assets/styles/index.css" />
-    <!-- Linking of Meta Image -->
-    <meta property="og:image" content="" />
-    <!-- Linking of FavIcon -->
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
   <body>
-    <!-- Main contents go here -->
+    <header>
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="Logo" />
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#" id="active">My URLs</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </nav>
+      <div class="cta">
+        <a href="#" class="secondary">Login</a>
+        <a href="#" class="primary">Try for free</a>
+      </div>
+    </header>
+
     <main>
-      <header>
-        <div class="logo">
-          <img src="./assets/images/logo.png" alt="Logo" />
-        </div>
-        <nav>
-          <ul class="menu">
-            <li><a href="#" id="active">My URLs</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">FAQs</a></li>
-          </ul>
-        </nav>
-        <div class="cta">
-          <a href="#" class="secondary">Login</a>
-          <a href="#" class="primary">Try for free</a>
-        </div>
-      </header>
-      <section class="hero">
-        <section class="wrapper">
-          <!-- Section for the Title -->
+      <section class="wrapper">
+        <div class="one">
           <div class="top">
             <h1 id="title">
               Optimize Your Online Experience with Our Advanced
@@ -48,7 +43,6 @@
               alt="Underline on H1 copy"
             />
           </div>
-          <!-- Section for the body copy on the Hero -->
           <div class="bottom">
             <p class="center">
               Personalize your shortened URLs to align with your brand identity.
@@ -57,59 +51,83 @@
               engagement.
             </p>
           </div>
-        </section>
-        <!-- Section for the CTA buttons -->
-        <div class="cta">
-          <a href="#" class="primary">Sign Up</a>
-          <a href="#" class="secondary">Learn more</a>
+          <div class="cta">
+            <a href="#" class="primary">Sign Up</a>
+            <a href="#" class="secondary">Learn more</a>
+          </div>
         </div>
-      </section>
-      <!-- Second section below the hero -->
-      <section class="second">
-        <img src="./assets/images/blob.png" class="blob" alt="blob">
-        <div class="container">
-          <div class="icons">
-            <div class="links">
-              <img
-                src="./assets/images/link.png"
-                class="link1"
-                alt="Link logo"
-              />
-              <img
-                src="./assets/images/link.png"
-                class="link2"
-                alt="Link logo"
-              />
-              <img
-                src="./assets/images/link.png"
-                class="link3"
-                alt="Link logo"
-              />
+        <div class="two">
+          <div class="rightAlign">
+            <div class="items">
+              <div class="icons">
+                <div class="links">
+                  <img
+                    src="./assets/images/link.png"
+                    class="link1"
+                    alt="Link logo"
+                  />
+                  <img
+                    src="./assets/images/link.png"
+                    class="link2"
+                    alt="Link logo"
+                  />
+                  <img
+                    src="./assets/images/link.png"
+                    class="link3"
+                    alt="Link logo"
+                  />
+                </div>
+                <img
+                  src="./assets/images/arrow.png"
+                  class="arrow"
+                  alt="Link logo"
+                />
+                <img
+                  src="./assets/images/link.png"
+                  class="link4"
+                  alt="Link logo"
+                />
+              </div>
+              <div class="text">
+                <p class="fill">
+                  Seamlessly transform your long URLs into concise <br />
+                  and shareable links with just a few clicks.
+                </p>
+              </div>
             </div>
-            <img
-              src="./assets/images/arrow.png"
-              class="arrow"
-              alt="Link logo"
-            />
-            <img src="./assets/images/link.png" class="link4" alt="Link logo" />
+            <img src="./assets/images/blob.png" class="blob" alt="blob" />
           </div>
-          <div class="text">
-            <p class="fill">
-              Seamlessly transform your long URLs into concise <br> and shareable
-              links with just few clicks.
-            </p>
+          <img src="./assets/images/base.png" class="base" alt="Base Image" />
+          <div id="circle-wrapper">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
           </div>
         </div>
       </section>
-      <!-- The base image -->
-      <img src="./assets/images/base.png" class="base" alt="Base Image">
-      <!-- Background circles -->
-      <div id="circles wrapper">
-        <div class="circle3"></div>
-        <div class="circle2"></div>
-        <div class="circle1"></div>
-      </div>
     </main>
-    <!-- Footer contents go here! -->
+
+    <section class="metrics">
+      <h2 class="description">
+        One Stop <br />
+        Four <span>Possibilities</span>
+      </h2>
+      <div class="features">
+        <h2 class="description">
+          One Stop <br />
+          Four <span>Possibilities</span>
+        </h2>
+        <h2 class="description">
+          One Stop <br />
+          Four <span>Possibilities</span>
+        </h2>
+        <h2 class="description">
+          One Stop <br />
+          Four <span>Possibilities</span>
+        </h2>
+      </div>
+    </section>
+
+    <!-- Footer contents go here -->
   </body>
 </html>
