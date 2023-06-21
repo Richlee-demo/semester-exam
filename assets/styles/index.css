@@ -3,9 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-* a{
+* a {
   font-weight: 600;
 }
 
@@ -13,9 +14,11 @@
 @media screen {
   @font-face {
     font-family: "Gilroy";
-    src: url("../fonts/gilroy/Gilroy-Regular.ttf") format("truetype"),
-      url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype"),
-      url("../fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
+    src: url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype"),
+      url("../fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype"),
+      url("../fonts/gilroy/Gilroy-Bold.ttf") format("truetype"),
+      url("../fonts/gilroy/Gilroy-ExtraBold.ttf") format("truetype"),
+      url("../fonts/gilroy/Gilroy-Heavy.ttf") format("truetype");
   }
 }
 
@@ -90,8 +93,8 @@ nav .menu {
   color: #ffffff;
 }
 
-.top{
-margin-bottom: -2rem;
+.top {
+  margin-bottom: -2rem;
 }
 
 .wrapper,
@@ -186,7 +189,7 @@ section > .cta {
   filter: blur(21.875rem);
 }
 
-.two{
+.two {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -267,7 +270,7 @@ section > .cta {
   top: 58.1875rem;
 }
 
-.metrics {
+#features {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,7 +279,107 @@ section > .cta {
   background: #f9fbfd;
 }
 
-.features {
+h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  width: max-content;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.metrics {
+  min-width: 44.3125rem;
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 2rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.description p {
+  font-size: 1rem;
+}
+
+.xx {
+  max-width: 7.6875rem;
+}
+
+.xxx {
+  max-width: 9rem;
+}
+
+#whyScissors {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  padding: 7.5rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 25rem;
+  gap: 1rem;
+}
+
+.right{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+#whyScissors .divider {
+  width: 0.3125rem;
+  height: 3rem;
+}
+
+#whyScissors .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 382px;
+  line-height: 1.75rem;
+  padding-top: 8px;
+}
+
+#whyScissors .whyContents img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.whyContents {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.whyContents p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.copy {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.whyTop,
+.whyBottom {
+  display: flex;
+  flex-direction: row;
 }
