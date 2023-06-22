@@ -328,7 +328,7 @@ h3 {
   padding: 7.5rem;
 }
 
-.left {
+.left{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -691,4 +691,66 @@ select {
 }
 .rightBackground {
   margin-left: auto;
+}
+
+#faqs {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 64px;
+}
+#accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 792px;
+}
+#accordion li {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 16px;
+  border-bottom: 2px solid #D6D6D6;
+}
+#accordion li label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #141414;
+  size: 20px;
+  font-weight: 600;
+  padding: 8px;
+  cursor: pointer;
+}
+#accordion li label img {
+  width: 24px;
+  height: auto;
+}
+#accordion label + input[type="radio"] {
+  display: none;
+}
+.faqContent p {
+  line-height: 32px;
+  padding: 8px;
+}
+#accordion .faqContent{
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s;
+}
+#accordion label + input[type="radio"]:checked + .faqContent{
+  max-height: 128px;
+}
+.faqLeft{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.faqLeft img{
+  width: 5px;
 }
