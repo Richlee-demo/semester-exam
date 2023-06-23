@@ -328,7 +328,7 @@ h3 {
   padding: 7.5rem;
 }
 
-.left{
+.left {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -522,14 +522,30 @@ h3 {
   flex-grow: 0;
 }
 #analytics {
+  position: relative;
   display: flex;
-  align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
   justify-content: center;
+  height: 32.6875rem;
   background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
 }
-.analytic {
+.leftBackground {
   position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+.rightBackground {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.analytic {
+  position: relative;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -537,6 +553,7 @@ h3 {
   height: 22.1875rem;
   background: #ffffff;
   border-radius: 0.75rem;
+  z-index: 2;
 }
 .inputs {
   display: flex;
@@ -692,65 +709,84 @@ select {
 .rightBackground {
   margin-left: auto;
 }
-
 #faqs {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.faqWrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  padding: 40px;
-  gap: 64px;
+  order: 1;
+}
+.faqLeftPattern {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.faqRightPattern {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 #accordion {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
-  width: 792px;
+  padding: 0rem;
+  width: 49.5rem;
 }
 #accordion li {
   list-style: none;
   width: 100%;
-  margin-bottom: 8px;
-  padding: 16px;
-  border-bottom: 2px solid #D6D6D6;
+  margin-bottom: .5rem;
+  padding: 1rem;
+  border-bottom: .125rem solid #d6d6d6;
 }
 #accordion li label {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #141414;
-  size: 20px;
+  size: 1.25rem;
   font-weight: 600;
-  padding: 8px;
+  padding: .5rem;
   cursor: pointer;
 }
 #accordion li label img {
-  width: 24px;
+  width: 1.5rem;
   height: auto;
 }
 #accordion label + input[type="radio"] {
   display: none;
 }
 .faqContent p {
-  line-height: 32px;
-  padding: 8px;
+  line-height: 2rem;
+  padding: .5rem;
 }
-#accordion .faqContent{
+#accordion .faqContent {
   max-height: 0;
   overflow: hidden;
   transition: 0.2s;
 }
-#accordion label + input[type="radio"]:checked + .faqContent{
-  max-height: 128px;
+#accordion label + input[type="radio"]:checked + .faqContent {
+  max-height: 8rem;
 }
-.faqLeft{
+.faqLeft {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
 }
-.faqLeft img{
-  width: 5px;
+.faqLeft img {
+  width: .3125rem;
 }
