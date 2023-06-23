@@ -7,24 +7,24 @@
 }
 
 * a {
-  font-weight: 600;
+  font-weight: 900;
 }
 
 /* Font import */
 @media screen {
   @font-face {
-    font-family: "Gilroy";
-    src: url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype"),
-      url("../fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype"),
-      url("../fonts/gilroy/Gilroy-Bold.ttf") format("truetype"),
-      url("../fonts/gilroy/Gilroy-ExtraBold.ttf") format("truetype"),
-      url("../fonts/gilroy/Gilroy-Heavy.ttf") format("truetype");
+    font-family: "Gilroy-Regular";
+    src: url("../fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Gilroy-SemiBold";
+    src: url("../fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
   }
 }
 
 body {
   width: 100%;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy-Regular", sans-serif;
   display: flex;
   flex-direction: column;
   font-size: 1.125rem;
@@ -32,11 +32,17 @@ body {
   overflow-y: none;
   color: #141414;
 }
+h1,
+h2,
+h3 {
+  font-family: "Gilroy-SemiBold";
+}
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 6.6rem;
   gap: 3.5rem;
 }
 
@@ -281,7 +287,6 @@ section > .cta {
   height: 13.75rem;
   background: #f9fbfd;
 }
-
 h2 {
   font-weight: 600;
   font-size: 2.5rem;
@@ -748,9 +753,9 @@ select {
 #accordion li {
   list-style: none;
   width: 100%;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   padding: 1rem;
-  border-bottom: .125rem solid #d6d6d6;
+  border-bottom: 0.125rem solid #d6d6d6;
 }
 #accordion li label {
   display: flex;
@@ -759,7 +764,7 @@ select {
   color: #141414;
   size: 1.25rem;
   font-weight: 600;
-  padding: .5rem;
+  padding: 0.5rem;
   cursor: pointer;
 }
 #accordion li label img {
@@ -771,7 +776,7 @@ select {
 }
 .faqContent p {
   line-height: 2rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 #accordion .faqContent {
   max-height: 0;
@@ -788,5 +793,5 @@ select {
   gap: 1rem;
 }
 .faqLeft img {
-  width: .3125rem;
+  width: 0.3125rem;
 }
