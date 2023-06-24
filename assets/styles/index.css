@@ -17,6 +17,10 @@
     src: url("../fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
   }
   @font-face {
+    font-family: "Gilroy-Medium";
+    src: url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  }
+  @font-face {
     font-family: "Gilroy-SemiBold";
     src: url("../fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
   }
@@ -926,9 +930,9 @@ footer .links {
   gap: 0.5rem;
 }
 footer .links a {
-  font-family: "Gilroy-Regular";
+  font-family: "Gilroy-Medium";
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   color: #141414;
 }
