@@ -64,10 +64,13 @@ header {
   justify-content: center;
   gap: 9rem;
 }
+header .logo {
+  height: 40px;
+}
 
 img {
   width: 9.6875rem;
-  height: 2.5rem;
+  height: 44px;
 }
 
 .menu {
@@ -415,11 +418,13 @@ h3 {
 
 .middle {
   display: flex;
-  width: 25rem;
+  /* width: 25rem; */
   gap: 1rem;
   justify-content: center;
 }
-
+.middle img {
+  width: auto;
+}
 .middle .text {
   display: flex;
   flex-direction: column;
@@ -435,6 +440,7 @@ h3 {
   justify-content: center;
   align-items: center;
   height: 39.1875rem;
+  margin-left: 40px;
 }
 
 .card {
@@ -442,10 +448,7 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 23.6875rem;
-  height: 28.4375rem;
-  left: 11rem;
-  top: 19rem;
+  padding: 56px;
   background: #ffffff;
   border: 0.025rem solid #005ae2;
   box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
