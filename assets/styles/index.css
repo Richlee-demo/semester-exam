@@ -65,12 +65,12 @@ header {
   gap: 9rem;
 }
 header .logo {
-  height: 40px;
+  height: 2.5rem;
 }
 
 img {
   width: 9.6875rem;
-  height: 44px;
+  height: 2.75rem;
 }
 
 .menu {
@@ -223,7 +223,7 @@ section > .cta {
 
 .rightAlign {
   margin-left: 23.0625rem;
-  margin-right: 20%;
+  margin-right: 25%;
   width: 52.0625rem;
   height: 21.0356rem;
   display: flex;
@@ -440,7 +440,7 @@ h3 {
   justify-content: center;
   align-items: center;
   height: 39.1875rem;
-  margin-left: 40px;
+  margin-left: 2.5rem;
 }
 
 .card {
@@ -448,7 +448,7 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 56px;
+  padding: 3.5rem;
   background: #ffffff;
   border: 0.025rem solid #005ae2;
   box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
@@ -765,48 +765,9 @@ input::placeholder {
   right: 0;
   bottom: 0;
 }
-#accordion {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0rem;
-  width: 49.5rem;
-}
-#accordion li {
-  list-style: none;
-  width: 100%;
-  margin-bottom: 0.5rem;
-  padding: 1rem;
-  border-bottom: 0.125rem solid #d6d6d6;
-}
-#accordion li label {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #141414;
-  size: 1.25rem;
-  font-weight: 600;
-  padding: 0.5rem;
-  cursor: pointer;
-}
-#accordion li label img {
-  width: 1.5rem;
-  height: auto;
-}
-#accordion label + input[type="radio"] {
-  display: none;
-}
 .faqContent p {
   line-height: 2rem;
   padding: 0.5rem;
-}
-#accordion .faqContent {
-  max-height: 0;
-  overflow: hidden;
-  transition: 0.2s;
-}
-#accordion label + input[type="radio"]:checked + .faqContent {
-  max-height: 8rem;
 }
 .faqLeft {
   display: flex;
@@ -877,7 +838,7 @@ footer {
   justify-content: center;
   height: 35rem;
   gap: 2.5rem;
-  margin-bottom: -48px;
+  margin-bottom: -3rem;
 }
 footer .footerLeft {
   display: flex;
@@ -909,7 +870,7 @@ footer .socialIcons img {
   flex-direction: column;
   height: fit-content;
   gap: 2rem;
-  max-width: 204px;
+  max-width: 12.75rem;
 }
 .footerRight .section3 {
   display: flex;
@@ -979,18 +940,62 @@ footer .links a:after {
 .scrollToTop {
   position: sticky;
   left: 96%;
-  bottom: 72px;
-  top: 72px;
-  width: 40px;
-  height: 40px;
+  bottom: 4.5rem;
+  top: 4.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  padding: 16px;
+  padding: 1rem;
   background-color: #4991ff;
   color: #fff;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   text-decoration: none;
+}
+/* Trying out the detail and Summary */
+details {
+  /* background-color: tomato; */
+  color: #141414;
+}
+div .accordion {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem;
+  width: 49.5rem;
+}
+details {
+  border-bottom: 0.125rem solid #d6d6d6;
+  padding: 16px;
+  transition: 0.5s;
+}
+summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #141414;
+  size: 1.25rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary:after {
+  content: "\002B";
+  color: #141414;
+  font-size: 32px;
+  font-weight: 500;
+}
+details[open] summary:after {
+  content: "\2212";
+  color: #141414;
+  font-weight: 500;
+}
+details[open] p {
+  max-height: 8rem;
+  transition: max-height 0.3s ease;
 }
