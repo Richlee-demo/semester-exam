@@ -1311,7 +1311,7 @@ footer .links a:after {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
   }
   header {
     justify-content: space-between;
@@ -1356,6 +1356,7 @@ footer .links a:after {
   .wrapper .one {
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
   }
   .top {
     margin-bottom: 0;
@@ -1379,6 +1380,14 @@ footer .links a:after {
   }
   .one .cta {
     height: auto;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .cta .primary{
+    width: 100%;
   }
   .fill {
     width: 100%;
@@ -1397,6 +1406,7 @@ footer .links a:after {
     padding: 3rem;
     max-width: 23.4375rem;
     height: auto;
+    margin-top: -2rem;
   }
   .metrics {
     flex-direction: column;
@@ -1572,5 +1582,6 @@ footer .links a:after {
   h3,
   h4{
     font-family: 'Gilroy-Medium';
+    line-height: 150%;
   }
 }
