@@ -1566,4 +1566,11 @@ footer .links a:after {
     left: 88%;
     z-index: 999;
   }
+  /* Heading font weight adjustments */
+  h1,
+  h2,
+  h3,
+  h4{
+    font-family: 'Gilroy-Medium';
+  }
 }
